@@ -18,7 +18,7 @@ import CoursList from './component/CoursList'
     })
   }
   //AddCourse
-    addcourse = (e)=>{
+    addCourse = (e)=>{
       e.preventDefault();
       let current = this.state.current;
       let courses = this.state.courses;
