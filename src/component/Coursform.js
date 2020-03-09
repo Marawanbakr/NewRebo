@@ -3,7 +3,7 @@ import React from 'react'
 const Coursform =(props)=>{
     return(
        <form onSubmit={props.addcourse}>
-           <input type="text" onChange={props.updateCourse}/>
+           <input type="text" onChange={props.updateCourse} value={props.value}/>
            <button type="submit">Add course</button>
        </form>
     )
