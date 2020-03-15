@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+box-sizing:border-box;
 }
+body{
+  background:rgb(224, 17, 214);
+  margin: 0;
+}
+h2 {
+  background: rgb(179, 11, 117);
+  padding:18px;
+  color:rgb(228, 109, 109);
+}
+.App{
+  padding:30px;
+  background:rgb(223, 152, 205);
+  width:80%;
+  margin:50px auto;
+  box-shadow: 1px 2px 5px #eee;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+input {
+  width: 80%;
+  border:0 ;
+  padding:6px 10px;
+  background:#fff
+}
+button{
+  width:20%;
+  border:0;
+  padding:6px 0;
+  margin:0;
+  outline: 0;
+  color:#676767;
+  font-weight: bold;
+  cursor:pointer;
+  background:rgb(100, 6, 3);
+}
+ul{
+  list-style:none;
+  padding:0;
+}
+li{
+  margin:15px 0;
+}
+li span{
+  display:  inline-block;
+  width:60%;
+  color:rgba(22, 4, 4, 0.342)
+}
+li > button:first-of-type {
+  background: #676767;
+  color:#fff;
+  margin-right: 1%;
+  width:19%;
+}
+li > button:last-of-type{
+  background:rgba(236, 43, 76, 0.568);
+  color:#fff;
+}
+ul > form {
+  margin:15px 0
 }

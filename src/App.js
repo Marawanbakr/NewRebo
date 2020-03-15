@@ -7,10 +7,11 @@ import CoursList from './component/CoursList'
         {name :"HTML"},
         {name :"CSS"},
         {name :"PHP"},
-        {name :"javascript"},
+        {name :"javaScript"},
     ],
     current :''
   }
+
   //UpdateCourse
   updateCourse = (e)=>{
     this.setState({
@@ -28,10 +29,33 @@ import CoursList from './component/CoursList'
         current:''
       })
     }
+
+  //delete course
+   deleteCourse =(index)=>{
+    let courses = this.state.courses;
+    courses.splice(index , 1 );
+    this.setState({
+      courses
+    })
+   }
+
+  //editCourse
+     editCourse = (index , value)=>{
+      let courses = this.state.courses;
+      let course = courses[index];
+      course ['name']  = value ;
+      this.setState ({
+        courses  
+      }) 
+
+     }
+
+
+
   render() {
     const {courses} = this.state;
     const coursList = courses.map(( course , index)=>{
-     return <CoursList details={course}key={index}/>
+     return <CoursList details={course}key={index}index={index} update={this.handleChande}deleteCourse={this.deleteCourse} editCourse={this.editCourse}/>
     })
     return( 
       <section className="App">
