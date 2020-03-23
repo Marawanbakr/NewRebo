@@ -7,7 +7,7 @@ import CoursList from './component/CoursList'
         {name :"HTML"},
         {name :"CSS"},
         {name :"PHP"},
-        {name :"javascript"},
+        {name :"javaScript"},
     ],
     current :''
   }
