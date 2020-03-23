@@ -34,7 +34,7 @@ import React, { Component , Fragment } from 'react';
   renderUpdateForm = ()=>{
   return(
     <form onSubmit={this.UpdateCourseItem}>
-      <input type="text"ref={ (v) =>{this.input=v}}  defaultValue={this.props.details.name}value={this.state.name}/>
+      <input type="text" ref={ (v) =>{this.input=v}}  defaultValue={this.props.details.name}value={this.state.name}/>
       <button>Update Course</button>
     </form>
   )

@@ -25,10 +25,13 @@ import CoursList from './component/CoursList'
       let courses = this.state.courses;
       courses.push({name:current})
       this.setState({
-        courses,
+        courses:'',
         current:''
       })
     }
+  
+  
+   
 
   //delete course
    deleteCourse =(index)=>{
@@ -52,9 +55,9 @@ import CoursList from './component/CoursList'
 
 
 
-  render() {
-    const {courses} = this.state;
-    const coursList = courses.map(( course , index)=>{
+ render() {
+      const {courses} = this.state;
+      const coursList = courses.map(( course , index)=>{
      return <CoursList details={course}key={index}index={index} update={this.handleChande}deleteCourse={this.deleteCourse} editCourse={this.editCourse}/>
     })
     return( 
@@ -65,5 +68,5 @@ import CoursList from './component/CoursList'
       </section>
    );
  }
-} 
+ } 
 export default App; 

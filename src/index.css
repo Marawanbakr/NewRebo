@@ -15,14 +15,14 @@ h2 {
   background:rgb(223, 152, 205);
   width:80%;
   margin:50px auto;
-  box-shadow: 1px 2px 5px #eee;
+  box-shadow: 1px 1px 20px rgba(1, 0, 22, 0.986);
 
 }
 input {
   width: 80%;
   border:0 ;
   padding:6px 10px;
-  background:#fff
+  background:rgb(255, 255, 255)
 }
 button{
   width:20%;
@@ -45,11 +45,12 @@ li{
 li span{
   display:  inline-block;
   width:60%;
-  color:rgba(22, 4, 4, 0.342)
+  color:rgb(0, 0, 0);
+  font-size:bold
 }
 li > button:first-of-type {
   background: #676767;
-  color:#fff;
+  color:rgb(255, 255, 255);
   margin-right: 1%;
   width:19%;
 }
